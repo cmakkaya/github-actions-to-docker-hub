@@ -28,7 +28,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build     
    
-    - name: uses: mr-smithers-excellent/docker-build-push@v6
+    - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:       
        image: cmakkaya/my-github-action-app
