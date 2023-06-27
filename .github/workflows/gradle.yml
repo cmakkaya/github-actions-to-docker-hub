@@ -28,10 +28,10 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build     
    
-    - uses: mr-smithers-excellent/docker-build-push@v6
-      name: Build & push Docker image
-      with:
-       image: cmakkaya/my-app
+    - name: Build & push Docker image
+      cmd: 
+       
+       image: cmakkaya/my-github-action-app
        registry: docker.io
        dockerfile: Dockerfile
        username: ${{ secrets.DOCKER_USERNAME }}
