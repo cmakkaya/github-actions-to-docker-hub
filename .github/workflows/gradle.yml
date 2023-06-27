@@ -27,8 +27,7 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-
-   steps:
+   
    - uses: actions/checkout@v3
      name: Check out code
 
